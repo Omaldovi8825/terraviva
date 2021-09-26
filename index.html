@@ -15,7 +15,8 @@
         <nav>
             <a href="#presentacion">About</a>
             <a href="#ubicacionGeografica">Ubicación</a>
-            <a href="#atracciones">Puntos de interés</a>
+            <a href="#atracciones">Sitios de interés</a>
+            <a href="#condominios">Condominios</a>
         </nav>
     </header>
 
@@ -41,7 +42,7 @@
             <li>Condominio Jardines de la hacienda: 5 de 7 subcondominios vendidos (próximas aperturas)</li>
             <li>Condominio Ciudad Deportiva: 25 de 39 subcondominios vendidos (próximas aperturas)</li>
         </ul>
-        <img src="" alt="fotos master plan">
+        <img class="fotoGenerica" src="https://i.ibb.co/ZzPyMFd/masteplan.jpg" alt="fotos master plan">
     </section>
 
     <section id="ubicacionGeografica">
@@ -49,7 +50,7 @@
         <h1>Tu futuro está cerca...</h1>
         <p>Ubicado a sólo 10 minutos de la playa de Telchac Puerto y a 3 minutos de Telchac pueblo, donde se encuentran las mejores playas de Yucatán.</p>
         <p>¡Un lugar lleno de cultura y crecimiento económico!</p>
-        <p>* fotos</p>
+        <img src="https://i.ibb.co/yFSRRFj/ubicacion.jpg" alt="ubiacion terraviva">
         <p>* diagrama o caricatura</p>
     </section>
 
@@ -64,7 +65,7 @@
             <div>
                 <h1>Mérida</h1>
                 <img src="https://i.ibb.co/R2HKwVh/merida.jpg" alt="merida">
-                <p>capital del estado de Yucatán, cuenta una rica herencia maya y colonial. Calificada por la ONU como la ciudad con mejor calidad de vida en México, y la segunda ciudad más segura según el INEGI.</p>
+                <p>Capital del estado de Yucatán, cuenta una rica herencia maya y colonial. Calificada por la ONU como la ciudad con mejor calidad de vida en México, y la segunda ciudad más segura según el INEGI.</p>
             </div>
             <div>
                 <h1>Cenotes</h1>
@@ -84,6 +85,113 @@
         </div>
     </section>
 
+    <section id="condominios">
+        <!-- seccion de los botones -->
+        <h1>Condominios</h1>
+        <div class="condominios_container">
+            <div id="condominios_botones_container">
+                <div class="boton_condominio" onclick="activarBotonCondominio(this)" data-condominio="paseoHenequen">
+                    <img src="https://i.ibb.co/SxbHC7V/henequen.jpg" alt="paseo henequen">
+                    <h3>Paseo Henequen</h3>
+                </div>
+                <div class="boton_condominio" onclick="activarBotonCondominio(this)" data-condominio="jardinesHacienda">
+                    <img class="gris" src="https://i.ibb.co/k3bH8B4/haciendajardines.jpg" alt="Jardines de la Hacienda">
+                    <h3>Jardines de la Hacienda</h3>
+                </div>
+                <div class="boton_condominio" onclick="activarBotonCondominio(this)" data-condominio="ciudadDeportiva">
+                    <img class="gris" src="https://i.ibb.co/LhpWxKp/ciudaddeportiva.jpg" alt="Ciudad Deportiva">
+                    <h3>Ciudad Deportiva</h3>
+                </div>
+            </div>
+            <!-- seccion de la pantalla -->
+            <div>
+                <h5>Descripción</h5>
+                <p id="descripcionCondominio">Esta amenidad fue la primera del proyecto y es una de las más solicitadas por nuestros clientes</p>
+                <h5>Características</h5>
+                <ul id="caracteristicasCondominio">
+                    <li>Calles Pavimentadas a cada lote</li>
+                    <li>Acometida de luz a cada lote</li>
+                    <li>Energía eléctrica de media tensión que atraviesa el desarrollo</li>
+                    <li>Drenaje pluvial</li>
+                </ul>
+                <h5>Fechas de entrega</h5>
+                <ul id="fechasEntrega">
+                    <li>Calles de asfalto internas (2026-2027)</li>
+                    <li>Electricidad a pie de lote (2026-2027)</li>
+                </ul>
+                <div id="pabellonesTematicos" class="oculto">
+                    <h5>Pabellones temáticos</h5>
+                    <ul>
+                        <li>Pet Friendy</li>
+                        <li>Ajardinado</li>
+                        <li>Fitness</li>
+                        <li>Meditación</li>
+                        <li>Polifacético</li>
+                    </ul>
+                </div>
+                <div id="fotosCondominios">
+                    <img class="fotoCondominio" src="https://i.ibb.co/NxKKZPS/henequen1.jpg" alt="foto1">
+                    <img class="fotoCondominio" src="https://i.ibb.co/grFGVLX/henequen2.jpg" alt="foto2">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="condominios2">
+        <!-- seccion de los botones -->
+        <h1>Condominios (opcion 2)</h1>
+        <div id="condominios_botones_container2">
+            <div class="boton_condominio2 boton_activo" onclick="activarBotonCondominio2(this)" data-condominio="paseoHenequen">
+                <h3>Paseo Henequen</h3>
+            </div>
+            <div class="boton_condominio2" onclick="activarBotonCondominio2(this)" data-condominio="jardinesHacienda">
+                <h3>Jardines de la Hacienda</h3>
+            </div>
+            <div class="boton_condominio2" onclick="activarBotonCondominio2(this)" data-condominio="ciudadDeportiva">
+                <h3>Ciudad Deportiva</h3>
+            </div>
+        </div>
+        <!-- seccion de la pantalla -->
+        <div>
+            <h5>Descripción</h5>
+            <p id="descripcionCondominio2">Esta amenidad fue la primera del proyecto y es una de las más solicitadas por nuestros clientes</p>
+            <h5>Características</h5>
+            <ul id="caracteristicasCondominio2">
+                <li>Calles Pavimentadas a cada lote</li>
+                <li>Acometida de luz a cada lote</li>
+                <li>Energía eléctrica de media tensión que atraviesa el desarrollo</li>
+                <li>Drenaje pluvial</li>
+            </ul>
+            <h5>Fechas de entrega</h5>
+            <ul id="fechasEntrega2">
+                <li>Calles de asfalto internas (2026-2027)</li>
+                <li>Electricidad a pie de lote (2026-2027)</li>
+            </ul>
+            <div id="pabellonesTematicos2" class="oculto">
+                <h5>Pabellones temáticos</h5>
+                <ul>
+                    <li>Pet Friendy</li>
+                    <li>Ajardinado</li>
+                    <li>Fitness</li>
+                    <li>Meditación</li>
+                    <li>Polifacético</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="ventajasCompetitivas">
+
+    </section>
+
+    <!-- boton fijo padi -->
+    <button type="button" class="botonPadi">
+        <a href="#presentacion">
+            <img src="https://i.ibb.co/mXssjJm/padiboton.png" alt="">
+        </a>
+    </button>
+
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
+    <script src="./js/main.js"></script>
 </body>
 </html>
