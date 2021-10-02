@@ -7,6 +7,7 @@
     --color_oscuro: black;
     --color_claro: #e9e9e9;
     --color_gris_oscuro: #666666;
+    --color_negro_ghost: #0000008f;
     --texto_blanco: #fff
 }
 
@@ -24,6 +25,11 @@ ul {
 
 a {
     text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
 }
 
 nav > a {
@@ -101,6 +107,14 @@ section {
     background-color: var(--color_oscuro);
 }
 
+.bg_negro_ghost {
+    background-color: var(--color_negro_ghost);
+}
+
+.bg_vino {
+    background-color: var(--color_vino);
+}
+
 /* FIN COLORES */
 
 .barrita_roja_vertical {
@@ -119,6 +133,13 @@ section {
     height: 600px;
     background: url('https://i.ibb.co/R2HKwVh/merida.jpg') no-repeat fixed;
     background-size: cover;
+    display: flex;
+}
+
+.presentacion_cel {
+    background: url('https://i.ibb.co/R2HKwVh/merida.jpg') no-repeat;
+    background-size: cover;
+
 }
 
 /* UBICACION */
@@ -232,5 +253,25 @@ section {
 @media only screen and (max-width: 768px) {
     .barrita_roja_vertical {
         display: none;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .parallax {
+        /* display: none; */
+        flex-direction: column;
+        height: unset;
+        background-attachment: scroll;
+        background-size: cover;
+    }
+
+    .w_60, .w_40 {
+        width: 100%;
+    }
+
+    .w_40 {
+        /* background: none; */
     }
 }
