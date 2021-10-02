@@ -11,7 +11,7 @@
 }
 
 html {
-    scroll-behavior: auto;
+    /* scroll-behavior: smooth; */
 }
 
 li {
@@ -22,6 +22,19 @@ ul {
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
+nav > a {
+    color: white;
+}
+
+nav > a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
 section {
     /* border: var(--borde); */
 }
@@ -30,13 +43,33 @@ section {
     /* border: 1px solid black */
 }
 
+/* CLASES RECURRENTES */
+.flex_all_centrado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.w_60 {
+    width: 60%;
+}
+
+.w_40 {
+    width: 40%;
+}
+
 /* COLORES */
 
-.rojo {
+.txt_rojo {
     color: var(--color_rojo);
 }
 
-.verde_vivo {
+.txt_verde_vivo {
     color: var(--color_verde_vivo);
 }
 
@@ -56,8 +89,16 @@ section {
     background-color: var(--color_claro);
 }
 
+.bg_verde_oscuro {
+    background-color: var(--color_verde_oscuro);
+}
+
 .bg_blanco {
     background-color: #fff;
+}
+
+.bg_oscuro {
+    background-color: var(--color_oscuro);
 }
 
 /* FIN COLORES */
@@ -71,9 +112,6 @@ section {
     background-color: var(--color_rojo);
 }
 
-.text-justify {
-    text-align: justify;
-}
 
 /* PRESENTACION */
 

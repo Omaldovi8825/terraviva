@@ -31,3 +31,35 @@ function cargarCondominio(el, id_condominio){
     pantalla_codominios.innerHTML = ""
     pantalla_codominios.appendChild(clon)
 }
+
+function cargarEfectosAnimacion(){
+    const elements = document.querySelectorAll('.invisible')
+    observer = new IntersectionObserver((entries, observer) => {
+        //console.log(entries)
+        entries.forEach( entry => {
+            if (entry.isIntersecting) {
+                const tipoAnimacion = entry.target.dataset.animacion
+                entry.target.classList.remove('invisible')
+                let animacion
+                switch(tipoAnimacion){
+                    case 'left':
+                        animacion = 'animate__fadeInLeft'
+                        break
+                    case 'rigth':
+                        animacion = 'animate__fadeInRight'
+                        break
+                    case 'down':
+                        animacion = 'animate__fadeInUp'
+                        break
+                    default:
+                        animacion = 'animate__fadeInUp'
+                        break
+                }
+                entry.target.classList.add('animate__animated', animacion)
+                observer.unobserve(entry.target);
+            } 
+        })
+    }, {threshold: 1.0})
+
+    elements.forEach( element => observer.observe(element))
+}

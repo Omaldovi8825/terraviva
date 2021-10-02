@@ -8,13 +8,14 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
 
-    <header class="sticky-top">
-        <nav>
+    <header class="sticky-top text-white py-3 bg_oscuro">
+        <nav class="d-flex justify-content-around">
             <a href="#presentacion">About</a>
             <a href="#ubicacionGeografica">Ubicación</a>
             <a href="#atracciones">Sitios de interés</a>
@@ -25,32 +26,38 @@
         </nav>
     </header>
 
-    <section id="presentacion" class="bg_gris_uscuro">
-        <div class="parallax">
-            <div class="container d-flex flex-column justify-content-center align-items-center text-white h-100">
-                <h1 class="mb-5">¿Qué es Terraviva?</h1>
-                <p class="text-center fs-4">Es un innovador proyecto de terrenos de inversiónn con varios grados de urbanización, en una comunidad inmobiliaria sustentable y planeada. El complejo se ubica a escasos minutos de la playa de Telchac Puerto, Mérida.</p>
+    <section id="presentacion" class="">
+        <div class="parallax text-white d-flex">
+            <div class="flex_all_centrado w_60">
+                <h1 class="mb-5 invisible" data-animacion="left">¿Qué es Terraviva?</h1>
                 <!-- <div class="barrita_roja_vertical"></div> -->
             </div>
+            <div class="w_40 flex_all_centrado" style="background-color:#0000008f;">
+                <p class="fs-5 p-5 text-justify" data-animacion="rigth">Es un innovador proyecto de terrenos de inversiónn con varios grados de urbanización, en una comunidad inmobiliaria sustentable y planeada. El complejo se ubica a escasos minutos de la playa de Telchac Puerto, Mérida.</p>
+            </div>
         </div>
-        <div class="container p-5 text-white">
-            <div class="row">
-                <p class="text-center">Nuestra misión es  hacer que las inversiones inmobiliarias sean fáciles, accesibles y transparentes para todos. Nuestros productos:</p>
-                <div class="col-4 text-center">
-                    <img class="w-50" src="https://i.ibb.co/N2mw1jy/iconotemp.png" alt="">
-                    <p>cuentan con seguridad jurídica</p>
-                    <img class="w-50" src="https://i.ibb.co/N2mw1jy/iconotemp.png" alt="">
-                    <p>son de escrituración inmediata.</p>
-                </div>
-                <div class="col-4 text-center">
-                    <img class="w-50" src="https://i.ibb.co/N2mw1jy/iconotemp.png" alt="">
-                    <p>son rentables y utilizables.</p>
-                    <img class="w-50" src="https://i.ibb.co/N2mw1jy/iconotemp.png" alt="">
-                    <p>sus amenidades no dependen de una especulativa urbanización municipal.</p>
-                </div>
-                <div class="col-4 text-center">
-                    <img class="w-50" src="https://i.ibb.co/N2mw1jy/iconotemp.png" alt="">
-                    <p>generan plusvalía gracias a su propia infraestructura.</p>
+        <div class="bg_gris_uscuro">
+            <div class="container p-5 text-white text-center">
+                <div class="row">
+                    <p class="">Nuestra misión es  hacer que las inversiones inmobiliarias sean fáciles, accesibles y transparentes para todos. Nuestros productos:</p>
+                    <div class="col-4">
+                        <img class="w-50" src="https://i.ibb.co/N2mw1jy/iconotemp.png" alt="">
+                        <p>cuentan con seguridad jurídica</p>
+                        <img class="w-50" src="https://i.ibb.co/N2mw1jy/iconotemp.png" alt="">
+                        <p>son de escrituración inmediata.</p>
+                    </div>
+                    <div class="col-4">
+                        <img class="w-50" src="https://i.ibb.co/N2mw1jy/iconotemp.png" alt="">
+                        <p>son rentables y utilizables.</p>
+                        <img class="w-50" src="https://i.ibb.co/N2mw1jy/iconotemp.png" alt="">
+                        <p>sus amenidades no dependen de una especulativa urbanización municipal.</p>
+                    </div>
+                    <div class="col-4">
+                        <img class="w-50" src="https://i.ibb.co/N2mw1jy/iconotemp.png" alt="">
+                        <p>generan plusvalía gracias a su propia infraestructura.</p>
+                        <img class="w-50" src="https://i.ibb.co/N2mw1jy/iconotemp.png" alt="">
+                        <p>Los trámites son sencillos y transparentes</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -58,7 +65,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 text-center">
-                        <p class="mb-5">El master plan del proyecto incluye:</p>
+                        <p class="mb-5 invisible" data-animacion="rigth">El master plan del proyecto incluye:</p>
                     </div>
                     <div class="col-12 col-lg-7">
                         <img class="w-100" src="https://i.ibb.co/ZzPyMFd/masteplan.jpg" alt="fotos master plan">
@@ -66,35 +73,35 @@
                     <div class="col-12 col-lg-5 py-1">
                         <ul class="d-flex flex-column h-100 justify-content-around">
                             <li>
-                                <i class="fas fa-chevron-circle-right rojo"></i>          
+                                <i class="fas fa-chevron-circle-right txt_rojo"></i>          
                                 Terra Market: zona comercial a la entrada del desarrollo (100% vendida)
                             </li>
                             <li>
-                                <i class="fas fa-chevron-circle-right rojo"></i>          
+                                <i class="fas fa-chevron-circle-right txt_rojo"></i>          
                                 Condominio Privada Fundadores: 100% vendido)
                             </li>
                             <li>
-                                <i class="fas fa-chevron-circle-right rojo"></i>          
+                                <i class="fas fa-chevron-circle-right txt_rojo"></i>          
                                 Condominio Bosques de la hacienda (100% vendido)
                             </li>
                             <li>
-                                <i class="fas fa-chevron-circle-right rojo"></i>          
+                                <i class="fas fa-chevron-circle-right txt_rojo"></i>          
                                 Condominio Paseo Ceibas (100% vendido)
                             </li>
                             <li>
-                                <i class="fas fa-chevron-circle-right rojo"></i>        
+                                <i class="fas fa-chevron-circle-right txt_rojo"></i>        
                                 Condominio Paseo flamboyanes (100% vendido)
                             </li>
                             <li>
-                                <i class="fas fa-chevron-circle-right verde_vivo"></i>        
+                                <i class="fas fa-chevron-circle-right txt_verde_vivo"></i>        
                                 Condominio Paseo Henequen: 5 de 9 subcondominios vendidos (próximas aperturas)
                             </li>
                             <li>
-                                <i class="fas fa-chevron-circle-right verde_vivo"></i>        
+                                <i class="fas fa-chevron-circle-right txt_verde_vivo"></i>        
                                 Condominio Jardines de la hacienda: 5 de 7 subcondominios vendidos (próximas aperturas)
                             </li>
                             <li>
-                                <i class="fas fa-chevron-circle-right verde_vivo"></i>        
+                                <i class="fas fa-chevron-circle-right txt_verde_vivo"></i>        
                                 Condominio Ciudad Deportiva: 25 de 39 subcondominios vendidos (próximas aperturas)
                             </li>
                         </ul>
@@ -108,9 +115,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
-                    <h1>Tu futuro está cerca...</h1>
-                    <p>Ubicado a sólo 10 minutos de la playa de Telchac Puerto y a 3 minutos de Telchac pueblo, donde se encuentran las mejores playas de Yucatán.</p>
-                    <p>¡Un lugar lleno de cultura y crecimiento económico!</p>
+                    <h1 class="invisible" data-animacion="left">Tu futuro está cerca...</h1>
+                    <p class="invisible" data-animacion="down">Ubicado a sólo 10 minutos de la playa de Telchac Puerto y a 3 minutos de Telchac pueblo, donde se encuentran las mejores playas de Yucatán.</br></br>¡Un lugar lleno de cultura y crecimiento económico!</p>
                 </div>
                 <div class="col-12 col-md-6">
                     <img class="w-100 d-block mx-auto" src="https://i.ibb.co/Fnc2B5L/mapaug.png" alt="ubiacion terraviva">
@@ -432,6 +438,7 @@
     <script>
         const elemento = document.querySelector('#condominios_botones_container2').children[0]
         cargarCondominio(elemento, 1)
+        cargarEfectosAnimacion()
     </script>
 </body>
 </html>
