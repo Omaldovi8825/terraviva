@@ -21,6 +21,7 @@ li {
 
 ul {
     padding: 0;
+    margin: 0;
 }
 
 a {
@@ -97,6 +98,10 @@ section {
 
 .bg_verde_oscuro {
     background-color: var(--color_verde_oscuro);
+}
+
+.bg_verde_claro {
+    background-color: var(--color_verde_vivo);
 }
 
 .bg_blanco {
@@ -232,6 +237,10 @@ section {
 
 /* fin  prueba */
 
+.icono_ventajas {
+    width: 100px;
+}
+
 /* FIN CONDOMINIOS */
 
 /* BOTON PADI */
@@ -273,5 +282,9 @@ section {
 
     .w_40 {
         /* background: none; */
+    }
+
+    .carousel-item {
+        height: 150px;
     }
 }

@@ -51,6 +51,9 @@ function cargarEfectosAnimacion(){
                     case 'down':
                         animacion = 'animate__fadeInUp'
                         break
+                    case 'bounce':
+                        animacion = 'animate__rubberBand'
+                        break
                     default:
                         animacion = 'animate__fadeInUp'
                         break
