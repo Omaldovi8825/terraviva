@@ -1,35 +1,50 @@
 const pantalla_codominios = document.querySelector('#pantalla_condominios')
-const tpl_paseo_henequen = document.querySelector('#tpl_paseo_henequen')
-const tpl_jardines_hacienda = document.querySelector('#tpl_jardines_hacienda')
-const tpl_ciudad_deportiva = document.querySelector('#tpl_ciudad_deportiva')
+const pabellonesTematicos = document.querySelector('#pabellonesTematico')
 
-function cargarCondominio(el, id_condominio){
-    let condominio_actual
-    switch (id_condominio) {
+
+function cambiarCondominio(boton_condominio, condominio){
+    const descripcion = document.querySelector('#descripcionCondominio')
+    const listaCaracteristicas = document.querySelector('#listaCaracteristicas')
+    const siblings = boton_condominio.parentElement.children
+
+    for(boton of siblings){
+        const textoBoton = boton.children[0]
+        textoBoton.classList.remove('txt_verde_vivo')
+        textoBoton.classList.add('txt_gris_claro')
+        boton.classList.remove('bg_gris_claro')
+        boton.classList.add('bg_gris_uscuro')
+    }
+
+    const textoBoton = boton_condominio.children[0]
+    textoBoton.classList.remove('txt_gris_claro')
+    textoBoton.classList.add('txt_verde_vivo')
+    boton_condominio.classList.remove('bg_gris_uscuro')
+    boton_condominio.classList.add('bg_gris_claro')
+
+    let tplCondominio
+    switch (condominio) {
         case 1:
-            condominio_actual = tpl_paseo_henequen
-            break
+            pabellonesTematicos.classList.add('d-none')
+            descripcion.textContent = 'Esta amenidad fue la primera del proyecto y es una de las más solicitadas por nuestros clientes'
+            tplCondominio = document.querySelector('#tplCarPH')
+            break;
         case 2:
-            condominio_actual = tpl_jardines_hacienda
-            break
+            pabellonesTematicos.classList.add('d-none')
+            descripcion.textContent = 'Cuenta con la ubicación más exclusiva por encontrarse a pie de la casa club, una de las principales amenidades del desarrollo'
+            tplCondominio = document.querySelector('#tplCarJH')
+            break;
         case 3:
-            condominio_actual = tpl_ciudad_deportiva
-            break
+            pabellonesTematicos.classList.remove('d-none')
+            descripcion.textContent = 'Uno de los condominios más complejos y exclusivos al contar con pabellones temáticos y salones...'
+            tplCondominio = document.querySelector('#tplCarCD')
+            break;
         default:
-            condominio_actual = tpl_paseo_henequen
+            //alert('no')
             break;
     }
-
-    const elemento_padre = el.parentElement
-    const sibling_elements = elemento_padre.children
-    for(element of sibling_elements){
-        element.classList.remove('bg-info')
-    }
-    el.classList.add('bg-info')
-
-    const clon = condominio_actual.content.cloneNode(true)
-    pantalla_codominios.innerHTML = ""
-    pantalla_codominios.appendChild(clon)
+    
+    listaCaracteristicas.innerHTML = ''
+    listaCaracteristicas.append(tplCondominio.content.cloneNode(true))
 }
 
 function cargarEfectosAnimacion(){

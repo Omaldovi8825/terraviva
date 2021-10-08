@@ -14,7 +14,7 @@
 </head>
 <body>
 
-    <header class="sticky-top text-white py-3 bg_oscuro">
+    <header>
         <!-- <nav class="container">
             <div class="row">
                 <div class="col-12 col-md-2">
@@ -25,7 +25,8 @@
                 </div>
             </div>
         </nav> -->
-        <nav class="">
+        <img src="https://i.ibb.co/B6k34xB/logo.png" class="logo" alt="">
+        <nav class="w-100 d-flex justify-content-around">
             <a href="#presentacion">About</a>
             <a href="#ubicacionGeografica">Ubicación</a>
             <a href="#atracciones">Sitios de interés</a>
@@ -76,18 +77,24 @@
                     <div class="col-12 col-sm-4">
                         <img class="w-50 invisible" data-animacion="bounce" src="https://i.ibb.co/N2mw1jy/iconotemp.png" alt="">
                         <p>cuentan con seguridad jurídica</p>
-                        <img class="w-50" src="https://i.ibb.co/N2mw1jy/iconotemp.png" alt="">
-                        <p>son de escrituración inmediata.</p>
                     </div>
                     <div class="col-12 col-sm-4">
-                        <img class="w-50" src="https://i.ibb.co/N2mw1jy/iconotemp.png" alt="">
+                        <img class="w-50 invisible" data-animacion="bounce" src="https://i.ibb.co/N2mw1jy/iconotemp.png" alt="">
                         <p>son rentables y utilizables.</p>
-                        <img class="w-50" src="https://i.ibb.co/N2mw1jy/iconotemp.png" alt="">
-                        <p>sus amenidades no dependen de una especulativa urbanización municipal.</p>
                     </div>
                     <div class="col-12 col-sm-4">
                         <img class="w-50" src="https://i.ibb.co/N2mw1jy/iconotemp.png" alt="">
                         <p>generan plusvalía gracias a su propia infraestructura.</p>
+                    </div>
+                    <div class="col-12 col-sm-4">
+                        <img class="w-50 invisible" data-animacion="bounce" src="https://i.ibb.co/N2mw1jy/iconotemp.png" alt="">
+                        <p>son de escrituración inmediata.</p>
+                    </div>
+                    <div class="col-12 col-sm-4">
+                        <img class="w-50" src="https://i.ibb.co/N2mw1jy/iconotemp.png" alt="">
+                        <p>sus amenidades no dependen de una especulativa urbanización municipal.</p>
+                    </div>
+                    <div class="col-12 col-sm-4">
                         <img class="w-50" src="https://i.ibb.co/N2mw1jy/iconotemp.png" alt="">
                         <p>Los trámites son sencillos y transparentes</p>
                     </div>
@@ -209,28 +216,28 @@
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <img src="https://i.ibb.co/R2HKwVh/merida.jpg" class="d-block w-100" alt="...">
+                    <img src="https://i.ibb.co/kKNbFXx/yucatan.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                       <h5>Mérida</h5>
                       <p>Capital del estado de Yucatán, cuenta una rica herencia maya y colonial. Calificada por la ONU como la ciudad con mejor calidad de vida en México, y la segunda ciudad más segura según el INEGI.</p>
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <img src="https://i.ibb.co/3kqkHL6/cenotes.jpg" class="d-block w-100" alt="...">
+                    <img src="https://i.ibb.co/kKNbFXx/yucatan.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                       <h5>Cenotes</h5>
                       <p>El término viene del maya “dzonot” (pozo sagrado), se estima que hay más de 10,000 en la península yucateca y son específicos de este lugar.</p>
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <img src="https://i.ibb.co/bFnt4w8/coloradas.jpg" class="d-block w-100" alt="...">
+                    <img src="https://i.ibb.co/kKNbFXx/yucatan.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                       <h5>Las coloradas</h5>
                       <p>Es un ecosistema de estero de 12,850 hectáreas de extensión. Santuario nacional del flamenco mexicano, donde se puede apreciar el mar de un precioso y peculiar tono rosado.</p>
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <img src="https://i.ibb.co/1LgkVv3/itza.jpg" class="d-block w-100" alt="...">
+                    <img src="https://i.ibb.co/kKNbFXx/yucatan.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                       <h5>Zonas arqueológicas</h5>
                       <p>Cuna de la cultura maya, Yucatán cuenta con algunas de las principales y más complejas zonas arqueológicas del país. Destacan Uxmal, Aké, Chacmultún, Kabáh, Ek Balam, Labná y Chichén Itzá, maravilla del México prehispánico y patrimonio de la humanidad de la UNESCO.</p>
@@ -249,8 +256,7 @@
         </div>
     </section>
 
-    <section id="condominios">
-        <!-- seccion de los botones -->
+    <!-- <section id="condominios">
         <h1>Condominios</h1>
         <div id="condominios_botones_container2">
             <div class="boton_condominio2" onclick="cargarCondominio(this, 1)">
@@ -263,76 +269,128 @@
                 <h3>Ciudad Deportiva</h3>
             </div>
         </div>
-        <!-- seccion de la pantalla -->
         <div id="pantalla_condominios">
 
         </div>
+    </section> -->
+
+    <section id="condominios">
+        <h1 class="text-center">Condominios</h1>
+        <div class="container-fluid d-none d-md-block">
+            <div class="row">
+                <div class="col-4 bg_gris_claro pointer" onclick="cambiarCondominio(this, 1)">
+                    <h3 class="txt_verde_vivo">Paseo Henequen
+                        <i class="fas fa-tree ms-2"></i>
+                    </h3>
+                </div>
+                <div class="col-4 bg_gris_uscuro pointer" onclick="cambiarCondominio(this, 2)">
+                    <h3 class="txt_gris_claro">Jardines de la Hacienda
+                        <i class="fas fa-home ms-2"></i>
+                    </h3>
+                </div>
+                <div class="col-4 bg_gris_uscuro pointer" onclick="cambiarCondominio(this, 3)">
+                    <h3 class="txt_gris_claro">Ciudad Deportiva
+                        <i class="fas fa-swimmer ms-2"></i>
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid d-sm-block d-md-none">
+            <div class="row">
+                <div class="col-4 bg_gris_claro pointer d-flex justify-content-center" onclick="cambiarCondominio(this, 1)">
+                    <i class="fas fa-tree txt_verde_vivo icono_condominio"></i>
+                </div>
+                <div class="col-4 bg_gris_uscuro pointer d-flex justify-content-center" onclick="cambiarCondominio(this, 2)">
+                    <i class="fas fa-home txt_gris_claro icono_condominio"></i>
+                </div>
+                <div class="col-4 bg_gris_uscuro pointer d-flex justify-content-center" onclick="cambiarCondominio(this, 3)">
+                    <i class="fas fa-swimmer txt_gris_claro icono_condominio"></i>
+                </div>
+            </div>
+        </div>
+        <div class="bg_gris_claro py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <h3 class="bg_verde_claro text-white p-2">Descripción</h3>
+                        <p class="" id="descripcionCondominio">Esta amenidad fue la primera del proyecto y es una de las más solicitadas por nuestros clientes</p>
+                        <h3 class="bg_verde_claro text-white p-2">Características</h3>
+                        <ul id="listaCaracteristicas" class="pb-3 ps-3">
+                            <li><i class="fas fa-road"></i> Calles Pavimentadas a cada lote</li>
+                            <li><i class="far fa-lightbulb"></i> Acometida de luz a cada lote</li>
+                            <li><i class="fas fa-bolt"></i> Energía eléctrica de media tensión que atraviesa el desarrollo</li>
+                            <li><i class="fas fa-cloud-rain"></i> Drenaje pluvial</li>
+                        </ul>
+                        <div class="d-none" id="pabellonesTematico">
+                            <h3 class="bg_verde_claro text-white p-2">Pabellones temáticos</h3>
+                            <div class="row pb-5">
+                                <div class="col-12 col-md-6">
+                                    <ul class="ps-3">
+                                        <li><i class="fas fa-paw"></i> Pet Friendy</li>
+                                        <li><i class="fab fa-pagelines"></i> Ajardinado</li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <ul class="ps-3">
+                                        <li><i class="fas fa-biking"></i> Fitness</li>
+                                        <li><i class="fas fa-peace"></i> Meditación</li>
+                                        <li><i class="fas fa-globe"></i> Polifacético</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="https://i.ibb.co/bFnt4w8/coloradas.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="https://i.ibb.co/bFnt4w8/coloradas.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="https://i.ibb.co/bFnt4w8/coloradas.jpg" class="d-block w-100" alt="...">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- Templetes condominios -->
-    <template id="tpl_paseo_henequen">
-        <h5>Descripción</h5>
-        <p id="descripcionCondominio2">Esta amenidad fue la primera del proyecto y es una de las más solicitadas por nuestros clientes</p>
-        <h5>Características</h5>
-        <ul id="caracteristicasCondominio2">
-            <li>Calles Pavimentadas a cada lote</li>
-            <li>Acometida de luz a cada lote</li>
-            <li>Energía eléctrica de media tensión que atraviesa el desarrollo</li>
-            <li>Drenaje pluvial</li>
-        </ul>
-        <h5>Fechas de entrega</h5>
-        <ul id="fechasEntrega2">
-            <li>Calles de asfalto internas (2026-2027)</li>
-            <li>Electricidad a pie de lote (2026-2027)</li>
-        </ul>
+    <!-- templates caracteristicas -->
+
+    <template id="tplCarPH">
+        <li><i class="fas fa-road"></i> Calles Pavimentadas a cada lote</li>
+        <li><i class="far fa-lightbulb"></i> Acometida de luz a cada lote</li>
+        <li><i class="fas fa-bolt"></i> Energía eléctrica de media tensión que atraviesa el desarrollo</li>
+        <li><i class="fas fa-cloud-rain"></i> Drenaje pluvial</li>
     </template>
 
-    <template id="tpl_jardines_hacienda">
-        <h5>Descripción</h5>
-        <p>Cuenta con la ubicación más exclusiva por encontrarse a pie de la casa club, una de las principales amenidades del desarrollo</p>
-        <h5>Características</h5>
-        <ul>
-            <li>686 lotes</li>
-            <li>Calles pavimentadas a cada lote</li>
-            <li>Acometida de luz a cada lote</li>
-            <li>Energía eléctrica de media tensión que atraviesa el desarrollo</li>
-            <li>Drenaje pluvial</li>
-        </ul>
-        <h5>Fechas de entrega</h5>
-        <ul>
-            <li>Calles de asfalto internas (2026-2027)</li>
-            <li>Energía eléctrica a pie de lote (2026-2027)</li>
-        </ul>
+    <template id="tplCarJH">
+        <li><i class="fas fa-map-marked-alt"></i> 686 lotes</li>
+        <li><i class="fas fa-road"></i> Calles pavimentadas a cada lote</li>
+        <li><i class="fas fa-lightbulb"></i> Acometida de luz a cada lote</li>
+        <li><i class="fas fa-bolt"></i> Energía eléctrica de media tensión que atraviesa el desarrollo</li>
+        <li><i class="fas fa-cloud-rain"></i> Drenaje pluvial</li>
     </template>
 
-    <template id="tpl_ciudad_deportiva">
-        <h5>Descripción</h5>
-        <p>Uno de los condominios más complejos y exclusivos al contar con pabellones temáticos y salones...</p>
-        <h5>Características</h5>
-        <ul>
-            <li>Calle blanca a cada lote</li>
-            <li>Mantenimiento perpetuo de calles blancas</li>
-            <li>Energía eléctrica de media tensión que atraviesa el desarrollo</li>
-            <li>Ubicación privilegiada por encontrarse a pie del club deportivo</li>
-        </ul>
-        <h5>Fechas de entrega</h5>
-        <ul>
-            <li>Calle central (2026))</li>
-            <li>Calle blanca a pie de cada lote (2026</li>
-        </ul>
-        <div>
-            <h5>Pabellones temáticos</h5>
-            <ul>
-                <li>Pet Friendy</li>
-                <li>Ajardinado</li>
-                <li>Fitness</li>
-                <li>Meditación</li>
-                <li>Polifacético</li>
-            </ul>
-        </div>
+    <template id="tplCarCD">
+        <li><i class="fas fa-road"></i> Calle blanca a cada lote</li>
+        <li><i class="fas fa-tools"></i> Mantenimiento perpetuo de calles blancase</li>
+        <li><i class="fas fa-bolt"></i> Energía eléctrica de media tensión que atraviesa el desarrollo</li>
+        <li><i class="fas fa-map-marker-alt"></i> Ubicación privilegiada por encontrarse a pie del club deportivo</li>
     </template>
-
-    <!-- Fin comdominios -->
 
     <section id="amenidades">
         <h3>Amenidades principales</h3>
@@ -397,30 +455,68 @@
     </section>
 
     <section id="ventajasCompetitivas">
-        <h1>Sección Ventajas Competitivas</h1>
-        <p>Somos el único desarrollo de terrenos de inversión que cuenta con:</p>
-        <ul>
-            <li>Calle de asfalto a la entrada del desarrollo</li>
-            <li>Calle blanca a cada lote</li>
-            <li>Mantenimiento perpetuo de calles blancas</li>
-            <li>Energía eléctrica de media tensión que atraviesa el desarrollo.</li>
-            <li>Condominios con mayor grado de urbanización</li>
-        </ul>
-        <h3>Seguridad Jurídica</h3>
-        <p>Sólo ofrecemos operaciones inmobiliarias con la más alta seguridad jurídica. En particular todos nuestros productos son “de escrituración inmediata” y se ubican en zonas compatibles con desarrollo inmobiliario.</p>
-        <ul>
-            <li>Propiedad privada</li>
-            <li>Registro público de la propiedad</li>
-            <li>Libre de Gravamen</li>
-            <li>Permiso SEMARNAT</li>
-            <li>Permiso INAH</li>
-        </ul>
-        <h3>Innovación</h3>
-        <p>Una y otra vez hemos impulsado productos novedosos para agregar más valor a nuestros clientes y así dictar las reglas del mercado.</p>
-        <h3>Pasión</h3>
-        <p>Nos apasiona crear y comercializar productos que generan plusvalía intrínsecamente.</p>
+        <h3 class="text-center bg_verde_claro py-3 mb-0 text-white">Invierte con nosotros</h3>
+        <div class="bg_gris_uscuro py-5">
+            <div class="container text-white">
+                <div class="row mb-4">
+                    <p class="fs-3 text-center">Somos el único desarrollo de terrenos de inversión que cuenta con:</p>
+                    <div class="col-12 col-md-6">
+                        <ul>
+                            <li><i class="far fa-check-circle"></i> Calle de asfalto a la entrada del desarrollo </li>
+                            <li><i class="far fa-check-circle"></i> Calle blanca a cada lote</li>
+                            <li><i class="far fa-check-circle"></i> Mantenimiento perpetuo de calles blancas   </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <ul>
+                            <li><i class="far fa-check-circle"></i> Energía eléctrica de media tensión que atraviesa el desarrollo.</li>
+                            <li><i class="far fa-check-circle"></i> Condominios con mayor grado de urbanización</li>    
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 pb-3">
+                        <h3 class="txt_verde_vivo pb-3">Seguridad jurídica</h3>
+                        <p>Sólo ofrecemos operaciones inmobiliarias con la más alta seguridad jurídica. Todos nuestros productos son “de escrituración inmediata” y se ubican en zonas compatibles con desarrollo inmobiliario.</p>
+                        <div class="row">
+                            <div class="col-12 col-md-4 d-flex align-items-center justify-content-center mb-3">
+                                <i class="fas fa-balance-scale" style="font-size: 6em;"></i>
+                            </div>
+                            <div class="col-12 col-md-8">
+                                <ul style="line-height: 150%;">
+                                    <li><i class="far fa-check-circle"></i> Propiedad privada </li>
+                                    <li><i class="far fa-check-circle"></i> Registro público de la propiedad</li>
+                                    <li><i class="far fa-check-circle"></i> Libre de Gravamen</li>
+                                    <li><i class="far fa-check-circle"></i> Permiso SEMARNAT</li>
+                                    <li><i class="far fa-check-circle"></i> Permiso INAH</li>
+                                </ul>    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <h3 class="txt_verde_vivo pb-2">Innovación</h3>
+                        <div class="row">
+                            <div class="col-12 col-md-3 d-flex justify-content-center mb-3">
+                                <i class="fab fa-linode" style="font-size: 6em;"></i>
+                            </div>
+                            <div class="col-12 col-md-9">
+                                <p>Una y otra vez hemos impulsado productos novedosos para agregar más valor a nuestros clientes y así dictar las reglas del mercado.</p>
+                            </div>
+                        </div>
+                        <h3 class="txt_verde_vivo pb-2">Pasión</h3>
+                        <div class="row">
+                            <div class="col-12 col-md-3 d-flex justify-content-center mb-3">
+                                <i class="far fa-heart" style="font-size: 6em;"></i>
+                            </div>
+                            <div class="col-12 col-md-9">
+                                <p>Nos apasiona crear y comercializar productos que generan plusvalía intrínsecamente.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-
 
     <section id="invertirYucatan">
         <h1>¿Por qué invertir en Yucatán?</h1>
@@ -457,68 +553,6 @@
         </form>
         <p>© Copyright 2021 help_adulto.com</p>
     </footer> -->
-
-    <h3 class="text-center bg_verde_claro py-3 mb-0 text-white">Invierte con nosotros</h3>
-    <div class="bg_gris_uscuro py-5">
-        <div class="container text-white">
-            <div class="row mb-4">
-                <p class="fs-3 text-center">Somos el único desarrollo de terrenos de inversión que cuenta con:</p>
-                <div class="col-12 col-md-6">
-                    <ul>
-                        <li>Calle de asfalto a la entrada del desarrollo </li>
-                        <li> Calle blanca a cada lote</li>
-                        <li>Mantenimiento perpetuo de calles blancas   </li>
-                    </ul>
-                </div>
-                <div class="col-12 col-md-6">
-                    <ul>
-                        <li>Energía eléctrica de media tensión que atraviesa el desarrollo.</li>
-                        <li>Condominios con mayor grado de urbanización</li>    
-                    </ul>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-md-6 pb-3">
-                    <h3 class="txt_verde_vivo pb-3">Seguridad jurídica</h3>
-                    <p>Sólo ofrecemos operaciones inmobiliarias con la más alta seguridad jurídica. En particular todos nuestros productos son “de escrituración inmediata” y se ubican en zonas compatibles con desarrollo inmobiliario.</p>
-                    <div class="row">
-                        <div class="col-12 col-md-4 d-flex align-items-center justify-content-center mb-3">
-                            <i class="fas fa-balance-scale" style="font-size: 6em;"></i>
-                        </div>
-                        <div class="col-12 col-md-8">
-                            <ul style="line-height: 150%;">
-                                <li>Propiedad privada </li>
-                                <li>Registro público de la propiedad</li>
-                                <li>Libre de Gravamen</li>
-                                <li>Permiso SEMARNAT</li>
-                                <li>Permiso INAH</li>
-                            </ul>    
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6">
-                    <h3 class="txt_verde_vivo pb-2">Innovación</h3>
-                    <div class="row">
-                        <div class="col-12 col-md-3 d-flex justify-content-center mb-3">
-                            <i class="fab fa-linode" style="font-size: 6em;"></i>
-                        </div>
-                        <div class="col-12 col-md-9">
-                            <p>Una y otra vez hemos impulsado productos novedosos para agregar más valor a nuestros clientes y así dictar las reglas del mercado.</p>
-                        </div>
-                    </div>
-                    <h3 class="txt_verde_vivo pb-2">Pasión</h3>
-                    <div class="row">
-                        <div class="col-12 col-md-3 d-flex justify-content-center mb-3">
-                            <i class="far fa-heart" style="font-size: 6em;"></i>
-                        </div>
-                        <div class="col-12 col-md-9">
-                            <p>Nos apasiona crear y comercializar productos que generan plusvalía intrínsecamente.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <footer class="text-white">
         <div class="bg_vino py-5">
@@ -568,9 +602,9 @@
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
     <script src="./js/main.js"></script>
     <script>
-        const elemento = document.querySelector('#condominios_botones_container2').children[0]
-        cargarCondominio(elemento, 1)
-        cargarEfectosAnimacion()
+        //const elemento = document.querySelector('#condominios_botones_container2').children[0]
+        //cargarCondominio(elemento, 1)
+        //cargarEfectosAnimacion()
     </script>
 </body>
 </html>

@@ -8,7 +8,8 @@
     --color_claro: #e9e9e9;
     --color_gris_oscuro: #666666;
     --color_negro_ghost: #0000008f;
-    --texto_blanco: #fff
+    --texto_blanco: #fff;
+    --header-height: 50px;
 }
 
 html {
@@ -28,11 +29,6 @@ a {
     text-decoration: none;
 }
 
-nav {
-    display: flex;
-    justify-content: space-around;
-}
-
 nav > a {
     color: white;
 }
@@ -50,6 +46,20 @@ section {
     /* border: 1px solid black */
 }
 
+header {
+    background-color: var(--color_oscuro);
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+header .logo {
+    width: 100px;
+}
+
 /* CLASES RECURRENTES */
 .flex_all_centrado {
     display: flex;
@@ -62,12 +72,21 @@ section {
     text-align: justify;
 }
 
+.bordeado_arriba {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
 .w_60 {
     width: 60%;
 }
 
 .w_40 {
     width: 40%;
+}
+
+.pointer {
+    cursor: pointer;
 }
 
 /* COLORES */
@@ -82,6 +101,10 @@ section {
 
 .txt_claro {
     color: var(--texto_blanco)
+}
+
+.txt_gris_claro {
+    color: var(--color_claro)
 }
 
 .bg_rojo {
@@ -135,7 +158,7 @@ section {
 /* PRESENTACION */
 
 .parallax {
-    height: 600px;
+    height: calc(100vh - var(--header-height));
     background: url('https://i.ibb.co/R2HKwVh/merida.jpg') no-repeat fixed;
     background-size: cover;
     display: flex;
@@ -152,70 +175,20 @@ section {
 
 /* ATRACCIONES */
 
-.carousel-item {
+/* .carousel-item {
     height: 500px;
-}
+} */
 
 /* FIN ATRACCIONES */
 
 
 /* CONDOMINIOS */
-
-#condominios .condominios_container {
-    display: flex;
+.logo_condominio {
+    width: 50px;
 }
 
-.condominios_container > div {
-    border: var(--borde);
-}
-
-.condominios_container > div:nth-child(1) {
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.condominios_container > div:nth-child(2) {
-    width: 70%;
-}
-
-.condominios_container .boton_condominio {
-    border: var(--borde);
-    position: relative;
-    max-width: 200px;
-    margin: 5px 0;
-    cursor: pointer;
-}
-
-.condominios_container .boton_condominio > img {
-    width: 100%;
-}
-
-.condominios_container .boton_condominio > h3 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0;
-    text-align: center;
-    color: white;
-    background-color: black;
-}
-
-.gris {
-    filter: grayscale(100%);
-    opacity: .7;
-}
-
-#fotosCondominios {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.fotoCondominio {
-    width: 300px;
+.icono_condominio {
+    font-size: 3em;
 }
 
 /* prueba */
@@ -243,6 +216,12 @@ section {
 
 /* FIN CONDOMINIOS */
 
+/* VENTAJAS */
+
+#ventajasCompetitivas .fa-check-circle {
+    color: var(--color_verde_vivo);
+}
+
 /* BOTON PADI */
 .botonPadi {
     width: 100px;
@@ -264,7 +243,7 @@ section {
         display: none;
     }
 
-    nav {
+    header {
         display: none;
     }
 
