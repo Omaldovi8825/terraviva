@@ -1,19 +1,27 @@
 :root {
     --borde: 1px solid black;
-    --color_vino: #ab0038;
-    --color_rojo: #ff054a;
-    --color_verde_vivo: #00e6dd;
-    --color_verde_oscuro: #12a295;
+    --color_rojo_oscuro: #ab0038;
+    --color_rojo_claro: #e20a4d;
+    --color_verde_claro: #82e8e1;
+    --color_verde_oscuro: #31c9ba;
     --color_oscuro: black;
-    --color_claro: #e9e9e9;
+    --color_gris_claro: #e9e9e9;
     --color_gris_oscuro: #666666;
     --color_negro_ghost: #0000008f;
     --texto_blanco: #fff;
     --header-height: 50px;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 html {
     /* scroll-behavior: smooth; */
+}
+
+body {
+    /* background-color: var(--color_oscuro); */
 }
 
 li {
@@ -47,7 +55,7 @@ section {
 }
 
 header {
-    background-color: var(--color_oscuro);
+    background-color: var(--color_negro_ghost);
     height: var(--header-height);
     display: flex;
     align-items: center;
@@ -91,32 +99,32 @@ header .logo {
 
 /* COLORES */
 
-.txt_rojo {
-    color: var(--color_rojo);
+.txt_rojo_claro {
+    color: var(--color_rojo_claro);
 }
 
-.txt_verde_vivo {
-    color: var(--color_verde_vivo);
+.txt_verde_claro {
+    color: var(--color_verde_claro);
 }
 
-.txt_claro {
+.txt_blanco {
     color: var(--texto_blanco)
 }
 
 .txt_gris_claro {
-    color: var(--color_claro)
+    color: var(--color_gris_claro)
 }
 
-.bg_rojo {
-    background-color: var(--color_rojo);
+.bg_rojo_claro {
+    background-color: var(--color_rojo_claro);
 }
 
-.bg_gris_uscuro {
+.bg_gris_oscuro {
     background-color: var(--color_gris_oscuro);
 }
 
 .bg_gris_claro {
-    background-color: var(--color_claro);
+    background-color: var(--color_gris_claro);
 }
 
 .bg_verde_oscuro {
@@ -124,7 +132,7 @@ header .logo {
 }
 
 .bg_verde_claro {
-    background-color: var(--color_verde_vivo);
+    background-color: var(--color_verde_claro);
 }
 
 .bg_blanco {
@@ -139,8 +147,8 @@ header .logo {
     background-color: var(--color_negro_ghost);
 }
 
-.bg_vino {
-    background-color: var(--color_vino);
+.bg_rojo_oscuro {
+    background-color: var(--color_rojo_oscuro);
 }
 
 /* FIN COLORES */
@@ -151,7 +159,7 @@ header .logo {
     right: 0;
     height: 100%;
     width: 8px;
-    background-color: var(--color_rojo);
+    background-color: var(--color_rojo_claro);
 }
 
 
@@ -219,7 +227,7 @@ header .logo {
 /* VENTAJAS */
 
 #ventajasCompetitivas .fa-check-circle {
-    color: var(--color_verde_vivo);
+    color: var(--color_verde_claro);
 }
 
 /* BOTON PADI */
