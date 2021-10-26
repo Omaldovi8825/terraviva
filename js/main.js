@@ -9,16 +9,16 @@ function cambiarCondominio(boton_condominio, condominio){
 
     for(boton of siblings){
         const textoBoton = boton.children[0]
-        textoBoton.classList.remove('txt_verde_vivo')
+        textoBoton.classList.remove('txt_verde_claro')
         textoBoton.classList.add('txt_gris_claro')
         boton.classList.remove('bg_gris_claro')
-        boton.classList.add('bg_gris_uscuro')
+        boton.classList.add('bg_gris_oscuro')
     }
 
     const textoBoton = boton_condominio.children[0]
     textoBoton.classList.remove('txt_gris_claro')
-    textoBoton.classList.add('txt_verde_vivo')
-    boton_condominio.classList.remove('bg_gris_uscuro')
+    textoBoton.classList.add('txt_verde_claro')
+    boton_condominio.classList.remove('bg_gris_oscuro')
     boton_condominio.classList.add('bg_gris_claro')
 
     let tplCondominio
