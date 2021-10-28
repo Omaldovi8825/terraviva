@@ -9,15 +9,15 @@ function cambiarCondominio(boton_condominio, condominio){
 
     for(boton of siblings){
         const textoBoton = boton.children[0]
-        textoBoton.classList.remove('txt_verde_claro')
-        textoBoton.classList.add('txt_gris_claro')
+        textoBoton.classList.remove('txt_verde_oscuro')
+        textoBoton.classList.add('txt_gris_intermedio')
         boton.classList.remove('bg_gris_claro')
         boton.classList.add('bg_gris_oscuro')
     }
 
     const textoBoton = boton_condominio.children[0]
-    textoBoton.classList.remove('txt_gris_claro')
-    textoBoton.classList.add('txt_verde_claro')
+    textoBoton.classList.remove('txt_gris_intermedio')
+    textoBoton.classList.add('txt_verde_oscuro')
     boton_condominio.classList.remove('bg_gris_oscuro')
     boton_condominio.classList.add('bg_gris_claro')
 
@@ -80,4 +80,15 @@ function cargarEfectosAnimacion(){
     }, {threshold: 1.0})
 
     elements.forEach( element => observer.observe(element))
+}
+
+function cambiarAmenidades(amenidad1, amenidad2){
+    amenidad2.classList.add('d-none')
+    amenidad1.classList.remove('d-none')
+}
+
+function mostrarContenidoAmenidad(amenidad1, amenidad2, amenidad3 = null){
+    amenidad1.classList.remove('d-none')
+    amenidad2.classList.add('d-none')
+    if(amenidad3) amenidad3.classList.add('d-none')
 }
